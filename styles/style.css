@@ -6,11 +6,10 @@
   font-family: var(--font-family);
   color: var(--text-color);
   background-color: var(--background-color);
-  background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-image: url(/images/cover-image.png);
+  background-image: url(/images/cover-image-dark.png);
   min-inline-size: 375px;
   max-inline-size: 1024px;
   margin: 0 auto;
@@ -111,13 +110,11 @@
   font-weight: 700;
   font-size: var(--font-size);
   color: var(--text-color);
-  width: 355px; /* фиксированная ширина */
-  height: 117px; /* фиксированная высота */
   line-height: var(--main-line-height);
   font-family: var(--font-family);
   font-style: normal;
-  padding-inline-start: var(--main-gap, 10px);
-  padding-inline-end: var(--main-gap, 10px);
+  padding-inline-start: var(--main-gap);
+  padding-inline-end: var(--main-gap);
   margin-block-start: 75px;
 }
 
@@ -127,20 +124,16 @@
   font-weight: bold;
   font-size: var(--font-size);
   display: block;
-  /* inline-size: 100%; */
   block-size: fit-content;
-  /* padding: 5px 10px; */
   justify-self: end;
 }
 
 /* Стили для кнопок темы */
 .header__theme-menu {
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
   justify-self: end;
-  /* block-size: 70px;
-  inline-size: 98px; */
 }
 
 .header__theme-menu-list {
@@ -186,25 +179,22 @@
 }
 
 .header__theme-menu-button_active {
-  /* pointer-events: none; */
   border: 1px solid var(--accent-color);
   pointer-events: none;
 }
 
-/* Медиа-запросы для адаптива  */
+/* Медиа-запросы */
 
 @media (width >= 768px) {
   .page {
-    padding: 10px;
+    padding: 20px;
   }
 
   .header {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    display: grid;
   }
 
   .header-rec {
-    /* inset-inline-start: 657px; */
     gap: 5px;
   }
   .header-title {
@@ -222,7 +212,6 @@
     block-size: 117px;
     grid-column: 2 / 4;
     justify-self: right;
-    margin-block-start: 162px;
   }
 
   .title-decor {
@@ -231,9 +220,7 @@
   }
 
   .header__theme-menu {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    align-self: start;
+    grid-column: 4;
     justify-self: end;
   }
 }
@@ -242,6 +229,7 @@
   .header {
     padding: 20px;
     min-block-size: 640px;
+    display: grid;
   }
   .header-rec {
     inset-inline-end: 39px;
@@ -250,6 +238,9 @@
     align-self: start;
     justify-self: end;
     display: inline-block;
+  }
+  nav.header__theme-menu {
+    place-self: start center;
   }
   .header-title {
     top: 319px;
@@ -288,7 +279,6 @@
   font-size: 18px;
   line-height: 23.4px;
   font-style: normal;
-  /* width: 100%; */
 }
 
 .section-text-blok-title {
@@ -415,6 +405,7 @@
 .grid-image {
   inline-size: 100%;
 }
+
 @media (width >= 768px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
@@ -450,6 +441,7 @@
   max-block-size: 668px;
   padding: var(--main-gap);
 }
+
 @supports (block-size: 100dvb) {
   .footer {
     block-size: 100dvb;
