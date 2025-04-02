@@ -10,8 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #ff8dcb;
-  --text-color: #353430;            /* Новый основной текстовый цвет */
-  --main-br-color: #fff1f7;
+  --main-br-color: #353430;
   --br-image: url(../images/cover-image-light.png);
   --main-text-color: #353430;
   --nav-color: #353430;
@@ -30,8 +29,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #ff8dcb;
-    --text-color: #353430;
-    --main-br-color: #fff1f7;
+    --main-br-color: #353430;
     --br-image: url(../images/cover-image-light.png);
     --main-text-color: #353430;
     --nav-color: #353430;
@@ -47,22 +45,7 @@
   }
 }
 .theme-light .page {
-  .header__theme-menu-button {
-    color: var(--text-color);
-    border: 1px solid var(--nav-color);
-  }
-  .theme-light .page {
-  .section-text-blok-title {
-    color: var(--text-color);
-  }
-  .content-section-title {
-    color: var(--text-color);
-  }
-
-  .text-blok-subtitle {
-    color: var(--text-color);
-  }
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
-}
+
 
