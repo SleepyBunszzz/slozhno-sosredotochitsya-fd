@@ -27,8 +27,6 @@
   inline-size: 100%;
   min-block-size: 668px;
   padding: var(--main-gap);
-  align-items: center;
-  justify-items: end;
 }
 
 .header-rec {
