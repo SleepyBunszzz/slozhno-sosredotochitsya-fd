@@ -10,18 +10,17 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #ff8dcb;
+  --text-color: #353430;            /* Новый основной текстовый цвет */
   --main-br-color: #fff1f7;
   --br-image: url(../images/cover-image-light.png);
   --main-text-color: #353430;
   --nav-color: #353430;
-  --nav-hover-color: rgb(50 49 45/ 0.4);
-  --main-heading-collor: #353430;
-  --section-heading-color: #353430;
+  --nav-hover-color: rgb(50 49 45 / 0.4);
   --header-logo-color: #ffc2e6;
   --footer-logo-color: #ffc2e6;
   --decor-color: #353430;
-
-
+  --title-color: #db00ff;
+  --title-shadow: 4px 4px 0 #ff8dcb;
 }
 
 .theme-light .header-rec {
@@ -31,21 +30,39 @@
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #ff8dcb;
+    --text-color: #353430;
     --main-br-color: #fff1f7;
     --br-image: url(../images/cover-image-light.png);
     --main-text-color: #353430;
     --nav-color: #353430;
-    --nav-hover-color: rgb(50 49 45/ 0.4);
-    --main-heading-collor: #353430;
-    --section-heading-color: #353430;
+    --nav-hover-color: rgb(50 49 45 / 0.4);
     --header-logo-color: #ffc2e6;
     --footer-logo-color: #ffc2e6;
+    --decor-color: #353430;
+    --title-color: #db00ff;
+    --title-shadow: 4px 4px 0 #ff8dcb;
   }
   .header-rec {
     display: none;
   }
 }
 .theme-light .page {
+  .header__theme-menu-button {
+    color: var(--text-color);
+    border: 1px solid var(--nav-color);
+  }
+  .theme-light .page {
+  .section-text-blok-title {
+    color: var(--text-color);
+  }
+  .content-section-title {
+    color: var(--text-color);
+  }
+
+  .text-blok-subtitle {
+    color: var(--text-color);
+  }
   /* Вам также нужно будет написать ряд подобных селекторов */
+}
 }
 
