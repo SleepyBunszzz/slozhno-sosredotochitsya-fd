@@ -295,12 +295,8 @@
   font-size: var(--font-size);
   width: 100%;
   font-family: var(--font-family);
-  font-weight: 400;
-  line-height: var(--line-height);
-}
-
-.section-text-blok-title {
   font-weight: 700;
+  line-height: var(--line-height);
 }
 
 .text-blok-subtitle {
