@@ -2,7 +2,7 @@
 
 .page {
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
   font-family: var(--font-family);
   color: var(--text-color);
   background-color: var(--background-color);
@@ -32,7 +32,6 @@
 .header-rec {
   position: absolute;
   display: flex;
-  min-block-size: 33px;
   min-inline-size: 26px;
   color: var(--decor-color);
   font-family: var(--font-family);
@@ -46,7 +45,6 @@
   inset-block-start: calc(var(--main-gap) + 2px);
 }
 
-/* Точка справа от надписи REC */
 .header-rec::after {
   content: "";
   position: absolute;
@@ -87,7 +85,7 @@
 
 .header-title {
   padding-inline-start: 0;
-  font-family: "IBM Plex Mono";
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
@@ -157,7 +155,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--nav-hover-color);
+  border: 1px solid currentColor;
   pointer-events: none;
 }
 
@@ -272,7 +270,7 @@
 }
 
 .section-link:active {
-  border-bottom: 1px solid var(--main-text-color);
+  border-bottom: 1px solid currentColor;
   pointer-events: none;
 }
 
