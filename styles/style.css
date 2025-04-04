@@ -98,7 +98,7 @@
 .header-text {
   width: 100%;
   background-color: var(--accent-color);
-  color: var(--background-color);
+  color: var(--text-color);
   font-weight: 700;
   font-size: var(--font-size);
   line-height: var(--line-height);
@@ -116,11 +116,12 @@
   gap: 14px;
   line-height: 100%;
 }
+
 .header__theme-menu-button {
   background: none;
   background-color: transparent;
   font-weight: 400;
-  font-size: var(--font-size, 18px);
+  font-size: var(--font-size);
   color: var(--nav-color);
   cursor: pointer;
   padding-right: 13px;
@@ -133,21 +134,12 @@
   line-height: 100%;
 }
 
-.header__theme-menu-button:focus-visible::after {
-  content: "";
-  position: absolute;
-  inline-size: 100%;
-  block-size: 1px;
-  background-color: var(--nav-color);
-  inset-block-end: -2px;
-  inset-inline-start: 0;
-  border-bottom: 1px solid var(--nav-hover-color);
-  outline: none;
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--nav-color);
 }
 
 .header__theme-menu-button:focus {
   outline: none;
-  border-bottom: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-button:hover {
@@ -155,7 +147,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid currentColor;
+  border-color: currentColor;
   pointer-events: none;
 }
 
@@ -299,6 +291,7 @@
 
 .text-blok-subtitle {
   margin-top: 10px;
+  font-weight: normal;
 }
 
 .section-text-bloks {

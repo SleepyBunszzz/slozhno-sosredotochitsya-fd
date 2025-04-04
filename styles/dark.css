@@ -20,10 +20,11 @@
   --header-logo-color: #db00ff;
   --footer-logo-color: #db00ff;
   --background-color: #000028;
+  --text-color: #000028;
 }
 
 .theme-light .header-rec {
-  display: block;
+  display: flex;
 }
 
 .theme-dark .page {
