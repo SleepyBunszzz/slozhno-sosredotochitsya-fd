@@ -19,7 +19,7 @@
   --footer-logo-color: #ffc2e6;
   --decor-color: #353430;
   --title-color: #db00ff;
-  --title-shadow: 4px 4px 0 #ff8dcb;
+  --title-shadow: 4px 4px 0 var(--accent-color);
   --background-color: #fff1f7;
   --text-color: #000028;
 }
@@ -40,7 +40,7 @@
     --footer-logo-color: #ffc2e6;
     --decor-color: #353430;
     --title-color: #db00ff;
-    --title-shadow: 4px 4px 0 #ff8dcb;
+    --title-shadow: 4px 4px 0 var(--accent-color);
     --background-color: #fff1f7;
     --text-color: #000028;
   }
