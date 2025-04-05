@@ -24,7 +24,7 @@
   --text-color: #000028;
 }
 
-@media (width >= 768px) {
+@media (min-width: 768px) {
   :root {
     --main-gap: 20px;
     --header-logo-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
