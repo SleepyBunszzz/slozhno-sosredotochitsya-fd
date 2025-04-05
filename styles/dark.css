@@ -21,12 +21,11 @@
   --footer-logo-color: #db00ff;
   --background-color: #000028;
   --text-color: #000028;
+  --decor-color: #ff0070;
+  --title-shadow: 4px 4px 0 var(--accent-color);
+  --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
-.theme-light .header-rec {
+.theme-dark .header-rec {
   display: flex;
-}
-
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
 }
